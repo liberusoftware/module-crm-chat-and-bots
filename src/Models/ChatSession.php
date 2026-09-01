@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Liberu\CRM\ChatAndBots\Models;
 
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Liberu\Foundation\Organizations\Models\Team;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -15,6 +17,11 @@ use Illuminate\Database\Eloquent\Model;
  */
 final class ChatSession extends Model
 {
+    public function team(): BelongsTo
+    {
+        return $this->belongsTo(Team::class);
+    }
+
     protected $table = 'crm_chat_sessions';
 
     protected $guarded = [];
