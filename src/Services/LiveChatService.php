@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Services;
+namespace Liberu\CRM\ChatAndBots\Services;
 
-use App\Models\ChatMessage;
-use App\Models\Contact;
-use App\Models\LiveChat;
+use Liberu\CRM\ChatAndBots\Models\ChatMessage;
+use Liberu\CRM\Core\Models\CrmContact as Contact;
+use Liberu\CRM\ChatAndBots\Models\LiveChat;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\Auth;

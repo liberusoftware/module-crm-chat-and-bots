@@ -1,8 +1,11 @@
 <?php
 
-namespace App\Models;
+namespace Liberu\CRM\ChatAndBots\Models;
 
-use App\Traits\IsTenantModel;
+
+use Liberu\CRM\Core\Models\CrmContact as Contact;
+use App\Models\User;
+use Liberu\Foundation\Organizations\Traits\IsTenantModel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

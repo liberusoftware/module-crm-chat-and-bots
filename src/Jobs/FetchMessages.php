@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Jobs;
+namespace Liberu\CRM\ChatAndBots\Jobs;
 
-use App\Actions\Helpdesk\CreateTicketFromEmail;
-use App\Actions\Helpdesk\CreateTicketFromWhatsApp;
-use App\Services\MessageService;
+use Liberu\CRM\ServiceAgent\Actions\Helpdesk\CreateTicketFromEmail;
+use Liberu\CRM\ServiceAgent\Actions\Helpdesk\CreateTicketFromWhatsApp;
+use Liberu\Foundation\Integrations\Services\MessageService;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;

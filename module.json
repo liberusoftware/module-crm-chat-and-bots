@@ -2,7 +2,7 @@
   "name": "crm-chat-and-bots",
   "display_name": "CRM Chat and Bots",
   "description": "Web chat, bot playbooks, qualification, booking and agent handoff",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "capability",
   "provider": "Liberu\\CRM\\ChatAndBots\\ChatAndBotsServiceProvider",
   "requires": {
